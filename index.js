@@ -8,7 +8,11 @@ const app = express();
 app.use(express.json());
 
 // Solve CORS
-app.use(cors({ credentials: true, origin: 'https://main--endearing-belekoy-8479b4.netlify.app/' }));
+app.use(cors({ 
+    credentials: true, 
+    origin: 'https://main--endearing-belekoy-8479b4.netlify.app/',
+    methods: ['GET', 'POST', 'PATCH', 'DELETE']
+}));
 
 // Public Folder for Imgaes
 app.use(express.static('public'));
