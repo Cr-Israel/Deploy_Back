@@ -10,7 +10,7 @@ app.use(express.json());
 // Solve CORS
 app.use(cors({ 
     credentials: true, 
-    origin: 'https://endearing-belekoy-8479b4.netlify.app/',
+    origin: 'https://endearing-belekoy-8479b4.netlify.app',
     methods: ['GET', 'POST', 'PATCH', 'DELETE']
 }));
 
