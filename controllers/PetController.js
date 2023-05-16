@@ -32,10 +32,6 @@ export default class PetController {
             res.status(422).json({ message: 'A cor é obrigatória, por favor tente novamente!' });
             return;
         };
-        if (images.length === 0) {
-            res.status(422).json({ message: 'A imagem é obrigatória, por favor tente novamente!' });
-            return;
-        };
 
         // Get Pet Owner(User)
         const token = getToken(req);
